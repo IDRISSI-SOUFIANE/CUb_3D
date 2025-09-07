@@ -6,7 +6,7 @@
 /*   By: sidrissi <sidrissi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/30 15:43:37 by sidrissi          #+#    #+#             */
-/*   Updated: 2025/08/30 16:13:52 by sidrissi         ###   ########.fr       */
+/*   Updated: 2025/09/07 21:30:02 by sidrissi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -86,17 +86,19 @@ typedef struct s_img
 	int endian;
 	int width;
 	int height;
-} t_img;
+} 
+
+
+t_img;
 
 typedef struct s_player
 {
 	float x;
 	float y;
-	// int screen_x;
-	// int screen_y;
 	float radius;
 	float turndirection;
 	float walkdirection;
+	float strafedirection;
 	float rotationangle;
 	float walkspeed;
 	float turnspeed;

@@ -6,7 +6,7 @@
 /*   By: sidrissi <sidrissi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/13 00:34:40 by sidrissi          #+#    #+#             */
-/*   Updated: 2025/07/13 00:45:08 by sidrissi         ###   ########.fr       */
+/*   Updated: 2025/09/07 22:45:39 by sidrissi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,9 +30,9 @@ long ft_atoi(char *str)
 	while (*str && (*str >= '0' && *str <= '9'))
 	{
 		res = res * 10 + (*str - '0');
-		if ((sign == 1 && res > INT_MAX )||
+		if ((sign == 1 && res > INT_MAX ) ||
 			(sign == -1 && res > ((long)INT_MAX + 1)))
-			return (1);
+			return (((long)INT_MAX + 1));
 		str++;
 	}
 	return (res * sign);

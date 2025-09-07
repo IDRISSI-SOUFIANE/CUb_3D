@@ -6,7 +6,7 @@
 /*   By: sidrissi <sidrissi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/30 15:43:53 by sidrissi          #+#    #+#             */
-/*   Updated: 2025/08/30 16:02:34 by sidrissi         ###   ########.fr       */
+/*   Updated: 2025/09/07 22:53:34 by sidrissi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -225,10 +225,11 @@ int check_res(char **res)
 
 int check_number(char *color, char *path, t_data *data)
 {
-	char **res;
-	int r;
-	int g;
-	int b;
+	char	**res;
+	long	r;
+	long	g;
+	long	b;
+
 
 	res = NULL;
 	res = ft_split(path, ", ");
@@ -245,7 +246,6 @@ int check_number(char *color, char *path, t_data *data)
 		data->v_map.n_floor = (r << 16 | g << 8 | b << 0);
 	else if (!ft_strcmp(color, "C "))
 		data->v_map.n_ceil = (r << 16 | g << 8 | b << 0);
-	;
 
 	return (free_2d_array(res), 0);
 }

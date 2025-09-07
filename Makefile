@@ -6,7 +6,7 @@
 #    By: sidrissi <sidrissi@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/08/30 16:02:07 by sidrissi          #+#    #+#              #
-#    Updated: 2025/08/30 16:12:53 by sidrissi         ###   ########.fr        #
+#    Updated: 2025/09/07 22:23:41 by sidrissi         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,7 +21,7 @@ FILES	= mandatory/cub3d.c mandatory/get_next_line.c mandatory/ft_parsing.c manda
 			projection/projection.c recasting/recasting.c
 
 OBJECT  = $(FILES:.c=.o)
-NAME    = Cub3d
+NAME    = cub3D
 
 MLX_FLAGS = -lmlx -framework OpenGL -framework AppKit
 
